@@ -1,0 +1,248 @@
+.circular {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 20.3px;
+    right: -14.1px;
+    transform: scale(.6);
+}
+.circular .inner {
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    margin: -40px 0 0 -40px;
+    background: red;
+    border-radius: 100%;
+}
+.circular .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4158d0;
+}
+.circular .bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border-radius: 100%;
+    clip: rect(0px, 100px, 100px, 50px);
+    transition: transform 100ms ease;
+}
+.circle .bar .progress {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: transform 100ms ease;
+    backface-visibility: hidden;
+    border-radius: 100%;
+    clip: rect(0px, 50px, 100px, 0px);
+    background: red;
+
+}
+
+
+
+#whatsapp_chat_widget {
+    display: block;
+}
+.wa-chat-box-content-send-btn-text {
+    margin-left: 8px;
+    margin-right: 8px;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+}
+.wa-chat-box-content-send-btn-icon {
+    width: 16px;
+    height: 16px;
+    fill: rgb(255, 255, 255);
+    z-index: 1;
+    flex: 0 0 16px;
+}
+.wa-chat-box-content-send-btn {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    appearance: none;
+    width: 70%;
+    padding: 12px;
+    border-radius: 50px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background-color: forestgreen;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+}
+.wa-chat-box-send {
+    background-color: white;
+
+}
+.wa-chat-box-content-chat-brand {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.wa-chat-box-content-chat-welcome {
+    text-align: left;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 4px;
+    color: rgb(17, 17, 17);
+}
+.wa-chat-box-content-chat {
+    background-color: white;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.wa-chat-box-content {
+
+    background: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+}
+.wa-chat-bubble-close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 2rem;
+    color: red;
+}
+.wa-chat-bubble-close-btn:hover {
+    color: darkred;
+}
+.wa-chat-box-brand-text {
+    max-width: 60%;
+    margin: 0 5px;
+    text-align: left;
+}
+.wa-chat-box-brand-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.wa-chat-box-brand-subtitle {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 4px;
+}
+
+.wa-chat-box-header {
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    background-color: #030;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+.wa-chat-box-brand {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+.wa-chat-box {
+    background-color: white;
+    z-index: 26000016000 !important;
+    margin-bottom: 80px;
+    width: 360px;
+    position: fixed !important;
+    bottom: 30px !important;
+    left: 20px;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    font: 400 normal 15px/1.3 -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+    
+}
+.wa-chat-box textarea{
+  padding: 5px;
+  margin: 3px;
+  border: 1px solid var(--grey);
+  outline: none;
+  border-radius: 5px;
+  
+}
+.wa-chat-box::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  background: none;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+border-top: 30px solid var(--white);
+
+transform: skewX(-20deg);
+}
+#wa-widget-send-button {
+    margin: 0 0 35px 0 !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: fixed !important;
+    z-index: 20600160 !important;
+    bottom: 0 !important;
+    text-align: center !important;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 25px;
+    visibility: visible;
+    transition: none !important;
+    background-color: forestgreen;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wa-messenger-svg-whatsapp {
+    fill: white;
+    width: 41px;
+    height: 50px;
+}
+.wa-chat-box-poweredby {
+    text-align: center;
+    font: 400 normal 15px/1.3 -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    font-style: italic;
+    font-size: 12px;
+    color: lightgray;
+}
+@media only screen and (max-width: 600px) {
+    .wa-chat-box
+    {
+        width: auto;
+        position: fixed !important;
+        right: 20px!important;
+        left: 20px!important;
+    }
+}

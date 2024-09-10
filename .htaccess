@@ -1,0 +1,9 @@
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^(.*)\.html(#.*)$ $1$2 [NC,L,R]
+RewriteCond %{THE_REQUEST} ^GET\ /index\.html
+RewriteRule ^index\.html$ / [NC,L,R]
+RewriteRule ^index(#.*)$ /$1 [NC,L,R]

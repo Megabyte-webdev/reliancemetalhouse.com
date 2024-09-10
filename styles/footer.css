@@ -1,0 +1,183 @@
+
+#footer {
+    width: 100%;
+    height: max-height;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 1em;
+    transition: all .6s ease;
+    background: var(--footer-bg);
+    overflow-x: hidden;
+    color: var(--white);
+    padding: 5%;
+    line-height: 1.5;
+    padding-bottom: 100px;
+}
+
+#footer>div {
+    flex: 1 1 100px;
+    margin: 8px;
+    padding: 0 10px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#footer > div .logo{
+    margin: 0;
+    padding: 0;
+    align-self: flex-start;
+}
+#footer>div:first-child,
+#footer>div:nth-of-type(2)  {
+    flex: 1 0 200px;
+}
+
+.footer-desc h1 {
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.footer-desc p {
+    font-size: .85em;
+    font-weight: 400;
+    margin-top: 5px;
+    max-width: 80%;
+}
+
+#footer h2 {
+    font-size: 1rem;
+    text-align: left;
+    margin: 1em 0;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
+.col>a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: inherit;
+    cursor: pointer;
+}
+
+.col p,
+.col>a {
+    font-size: .9em;
+    text-align: left;
+    margin: .5em 0;
+    color: inherit;
+    font-weight: 400;
+    align-self: flex-start;
+}
+
+.col>a:hover,
+.col>a:active {
+    color: wheat;
+}
+
+.socials div {
+    display: flex;
+    justify-content: flex-start;
+    width: max-content;
+    height: max-content;
+    margin-top: -10px;
+}
+
+.socials div a {
+  font-size: 1.5rem;
+  margin: 0 5px;
+}
+
+.socials p {
+    margin-top: 10px;
+}
+
+.socials p a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#footer>div:last-child {
+    flex: 1 0 auto;
+    max-width: 800px !important;
+    width: 100%;
+    margin: 10px auto;
+}
+
+#footer>div:last-child>* {
+    max-width: 600px !important;
+    width: 95%;
+    margin: 10px auto !important;
+}
+
+.subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: stretch;
+    justify-content: space-between;
+    transition: all 1s ease;
+}
+
+.subscribe>* {
+    border-radius: 5px;
+    padding: 5px;
+    height: 50px;
+}
+
+.subscribe button {
+    text-decoration: none;
+    max-width: 200px;
+    background: var(--light-nav-bg);
+    cursor: pointer;
+    font-weight: bolder;
+    transition: .3s ease;
+    border: none;
+    outline: none;
+    color: var(--white);
+
+}
+
+.subscribe input {
+    flex: 1 1 300px;
+    outline: none;
+    background: none;
+    border: 1px solid #777;
+    color: var(--light-grey);
+}
+
+.subscribe button p {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 1rem;
+}
+
+.subscribe button:hover {
+    background: var(--secondary-color);
+    transition: all 500ms ease;
+    color: var(--white);
+}
+
+.subscribe p:active {
+    transform: scale(.8);
+}
+
+.subscribe ::placeholder {
+    color: var(--grey);
+}
+
+@media screen and (min-width:500px) and (max-width:700px) {
+    #footer>div {
+        flex: 0 0 150px;
+    }
+
+    #footer>div:first-child {
+        flex: 0 0 300px;
+    }
+}
